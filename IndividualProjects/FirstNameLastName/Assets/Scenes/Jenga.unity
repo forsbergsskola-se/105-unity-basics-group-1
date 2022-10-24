@@ -130,6 +130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 595141188}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (15)
@@ -226,6 +242,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1340682476}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (20)
@@ -288,6 +320,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 958295940}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (23)
@@ -354,6 +402,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1825003591}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (5)
@@ -416,6 +480,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1087219633}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (2)
@@ -572,6 +652,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 595141188}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (16)
@@ -668,6 +764,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 958295940}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (22)
@@ -768,6 +880,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 277316667}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (14)
@@ -830,6 +958,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 958295940}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (21)
@@ -896,6 +1040,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1340682476}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (18)
@@ -992,6 +1152,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 376410282}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (10)
@@ -1054,6 +1230,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1237602692}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (27)
@@ -1177,6 +1369,50 @@ Transform:
   m_Father: {fileID: 2103358061}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1046235206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1046235207}
+  - component: {fileID: 1046235208}
+  m_Layer: 0
+  m_Name: BrickCounter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1046235207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046235206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19786131, y: -0.12103485, z: 2.0644999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1046235208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046235206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48816c8a0d4c5a84dbc63606ee4e2ecc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1087219632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,6 +1454,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 277316667}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (12)
@@ -1280,6 +1532,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1340682476}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (19)
@@ -1376,6 +1644,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 376410282}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (11)
@@ -1472,6 +1756,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 376410282}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (9)
@@ -1534,6 +1834,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1237602692}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (29)
@@ -1596,6 +1912,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1825003591}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (4)
@@ -1658,6 +1990,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1825003591}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (3)
@@ -1724,6 +2072,7 @@ GameObject:
   - component: {fileID: 1481866872}
   - component: {fileID: 1481866871}
   - component: {fileID: 1481866870}
+  - component: {fileID: 1481866873}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1797,6 +2146,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1481866873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481866869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c49b4cc203aa6414fae5c798d1d0e7d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!1001 &1622917135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1804,6 +2169,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 595141188}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (17)
@@ -1964,6 +2345,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 113641960}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (8)
@@ -2026,6 +2423,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 277316667}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (13)
@@ -2088,6 +2501,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1087219633}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick
@@ -2184,6 +2613,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 113641960}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (7)
@@ -2246,6 +2691,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1237602692}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (28)
@@ -2308,6 +2769,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 973695071}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (24)
@@ -2370,6 +2847,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 973695071}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (26)
@@ -2432,6 +2925,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 113641960}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (6)
@@ -2528,6 +3037,74 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2122894196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2122894199}
+  - component: {fileID: 2122894198}
+  - component: {fileID: 2122894197}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2122894197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122894196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &2122894198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122894196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &2122894199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122894196}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2134113505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2535,6 +3112,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1087219633}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (1)
@@ -2597,6 +3190,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 973695071}
     m_Modifications:
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1046235208}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CountBrick
+      objectReference: {fileID: 0}
+    - target: {fileID: 764705366108068171, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BrickCounter, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1857234622093791120, guid: fb2e97ed313f6054caa4234891b3dd71, type: 3}
       propertyPath: m_Name
       value: Brick (25)
