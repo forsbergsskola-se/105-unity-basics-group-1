@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BrickCounter : MonoBehaviour
 { 
-    int brickCount;
+    int _brickCount;
 
     public void CountBrick() 
     {
-        brickCount++;
-        Debug.Log($"Total Bricks Removed: {brickCount}");
+        _brickCount++;
+        Debug.Log($"Total Bricks Removed: {_brickCount}");
     }
 }
