@@ -1,14 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField]
+    public float movementSpeed;
+    public float rotationSpeed;
     void Update()
     {
-        if (Input.GetKey(KeyCode.W)) transform.Translate(0f, 0.01f, 0f);
-        if (Input.GetKey(KeyCode.S)) transform.Translate(0f, -0.01f, 0f);
-        if (Input.GetKey(KeyCode.A)) transform.Rotate(0f, 1f, 0f);
-        if (Input.GetKey(KeyCode.D)) transform.Rotate(0f, -1f, 0f);
+        var passedTime = Time.deltaTime;
+        transform.Translate(0f, 0f, Input.GetAxis("Vertical") * passedTime * movementSpeed);
+        transform.Rotate(0f, Input.GetAxis("Horizontal") * passedTime * rotationSpeed, 0f);
     }
 }
