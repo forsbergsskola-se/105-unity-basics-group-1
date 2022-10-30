@@ -6,11 +6,16 @@ public class Vehicle : MonoBehaviour {
     public CarMovement carMovement;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)) {
-            bool entering = player.activeInHierarchy;
-            if (!entering) player.transform.position = transform.position;
-            player.SetActive(!entering);
-            carMovement.enabled = entering;
+        if (EnterCarButtonPressed) {
+            
+            if (PlayerIsInCar) player.transform.position = transform.position;
+            ToggleCarActive();
+            TogglePlayerActive();
         }
     }
+
+    private bool EnterCarButtonPressed => Input.GetKeyDown(KeyCode.F);
+    private bool PlayerIsInCar => !player.activeInHierarchy;
+    private void TogglePlayerActive() => player.SetActive(PlayerIsInCar);
+    private void ToggleCarActive() => carMovement.enabled = !PlayerIsInCar; 
 }
