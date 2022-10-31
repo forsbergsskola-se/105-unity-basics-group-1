@@ -1,10 +1,17 @@
+using System;
 using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
-    public GameObject player;
+    GameObject _player;
     public CarMovement carMovement;
-    private void Update()
+
+    private void Start()
+    {
+        _player = GameObject.FindGameObjectWithTag("Player");
+    }
+
+    void Update()
     {
         if (EnterCarButtonPressed())
         {
@@ -12,7 +19,7 @@ public class Vehicle : MonoBehaviour
             {
                 LeaveCar();
             }
-            else if(Vector3.Distance(player.transform.position, transform.position) < 3)
+            else if(Vector3.Distance(_player.transform.position, transform.position) < 3)
             {
                 EnterCar();
             }
@@ -24,17 +31,17 @@ public class Vehicle : MonoBehaviour
     }
     bool PlayerIsInCar()
     {
-        return !player.activeInHierarchy;
+        return !_player.activeInHierarchy;
     }
     void LeaveCar()
     {
-        player.transform.position = transform.position;
-        player.SetActive(true);
+        _player.transform.position = transform.position;
+        _player.SetActive(true);
         carMovement.enabled = false;
     }
     void EnterCar()
     {
-        player.SetActive(false);
+        _player.SetActive(false);
         carMovement.enabled = true;
     }
 }
