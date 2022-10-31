@@ -15,7 +15,7 @@ public class Vehicle : MonoBehaviour {
         }
     }
 
-    private bool EnterCarButtonPressed => Input.GetKeyDown(KeyCode.F);
+    private bool EnterCarButtonPressed => Input.GetButtonDown("Interact-Vehicle");
     private bool PlayerIsInCar => !player.activeInHierarchy;
     private void TogglePlayerActive() => player.SetActive(PlayerIsInCar);
     private void ToggleCarActive() => carMovement.enabled = PlayerIsInCar; 
