@@ -8,7 +8,10 @@ public class Vehicle : MonoBehaviour
     {
         if (EnterCarButtonPressed())
         {
-            if (PlayerIsInCar()) LeaveCar();
+            if (PlayerIsInCar())
+            {
+                LeaveCar();
+            }
             else if(Vector3.Distance(player.transform.position, transform.position) < 3)
             {
                 EnterCar();
