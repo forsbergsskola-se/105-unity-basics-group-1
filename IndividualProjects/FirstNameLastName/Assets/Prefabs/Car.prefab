@@ -62,7 +62,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7017c5babdc8abc4fb320ad7dcebec24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3304132448806261569, guid: f7a2605bf3b7d684080d48d9c1612285, type: 3}
   carMovement: {fileID: 2496571314187368904}
 --- !u!1 &2496571314197205549
 GameObject:

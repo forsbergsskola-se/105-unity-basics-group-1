@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class Vehicle : MonoBehaviour
@@ -10,7 +9,6 @@ public class Vehicle : MonoBehaviour
     {
         _player = GameObject.FindGameObjectWithTag("Player");
     }
-
     void Update()
     {
         if (EnterCarButtonPressed())
