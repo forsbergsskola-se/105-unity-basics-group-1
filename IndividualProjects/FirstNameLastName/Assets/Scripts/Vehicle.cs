@@ -17,7 +17,7 @@ public class Vehicle : MonoBehaviour
             {
                 LeaveCar();
             }
-            else if(Vector3.Distance(_player.transform.position, transform.position) < 3)
+            else if(Vector3.Distance(_player.transform.position, transform.position) < 2)
             {
                 EnterCar();
             }
