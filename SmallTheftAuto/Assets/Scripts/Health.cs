@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 
-public class UI : MonoBehaviour
+public class Health : MonoBehaviour
 {
-    public PlayerHealth Health;
+     public PlayerHealth playerHealth;
     void Update()
     
     {TextMeshProUGUI textMeshPro = GetComponent<TextMeshProUGUI>();
-        textMeshPro.SetText ($"{Health.health}");
+        textMeshPro.SetText ($"{playerHealth.health}");
     }
 }
