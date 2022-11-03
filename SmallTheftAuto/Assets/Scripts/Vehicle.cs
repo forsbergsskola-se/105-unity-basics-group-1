@@ -1,17 +1,16 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
     public GameObject player;
-    private CarMovement carMovement;
+    private CarMovement _carMovement;
+    public int health;
 
     private void Start()
     {
         player = FindObjectOfType<PlayerMovement>().gameObject;
-        carMovement = GetComponent<CarMovement>();
+        _carMovement = GetComponent<CarMovement>();
     }
 
     private void Update()
@@ -20,19 +19,39 @@ public class Vehicle : MonoBehaviour
             if(!player.activeInHierarchy)
                 Exit();
                 
+        Health();
     }
 
     public void Enter()
     {
         Driver driver = player.GetComponent<Driver>();
         driver.gameObject.SetActive(false);
-        carMovement.enabled = true;
+        _carMovement.enabled = true;
     }
 
-    public void Exit()
+    void Exit()
     {
         player.SetActive(true);
+        //Move player a little so he doesn't spawn and push the car down 
         player.transform.position = transform.position + new Vector3(2.5f,0f,0f);
-        carMovement.enabled = false;
+        _carMovement.enabled = false;
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+         //if you want to add enemy cars, call it CarE
+        if(collision.gameObject.CompareTag("Wall")||collision.gameObject.CompareTag("CarE")) 
+            health -= 10;
+        
+        Debug.Log(collision.gameObject.name);
+    }
+
+    void Health()
+    {
+        if (health == 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    
 }
