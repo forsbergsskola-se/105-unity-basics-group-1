@@ -1,23 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
-    public float runSpeed = 0.01f;
-    void Update() {
-        if (Input.GetKey(KeyCode.W)) {
-            transform.Translate(0f, 0f, runSpeed);
-        }
-
-        if (Input.GetKey(KeyCode.S)) {
-            transform.Translate(0f, 0f, -runSpeed);
-        }
-
-        if (Input.GetKey(KeyCode.A)) {
-            transform.Rotate(0f, -0.2f, 0f);
-        }
-        if (Input.GetKey(KeyCode.D)) {
-            transform.Rotate(0f, 0.2f, 0f);
-        }
+    public float movementSpeed = 15f;
+    public float maxSpeed = 5;
+    public float rotationSpeed = 5f;
+    public Rigidbody _rigidbody;
+    void FixedUpdate() {
+        if (_rigidbody.velocity.magnitude < maxSpeed)
+            _rigidbody.AddRelativeForce(Vector3.forward * (Input.GetAxis("Vertical") * movementSpeed));
+        transform.Rotate(0f, Input.GetAxis("Horizontal") * rotationSpeed, 0f);
     }
 }
