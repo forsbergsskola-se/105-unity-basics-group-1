@@ -4,20 +4,20 @@ using UnityEngine;
 public class Vehicle : MonoBehaviour
 {
     private CarMovement _carMovement;
-    public GameObject player;
+    private GameObject _player;
     public int health;
     public bool isItMyCar;
 
     private void Start()
     {
-        player = FindObjectOfType<PlayerMovement>().gameObject;
+        _player = FindObjectOfType<PlayerMovement>().gameObject;
         _carMovement = GetComponent<CarMovement>();
     }
 
     private void Update()
     {
         //Todo: fix when we push getButton it shouldn't do a double getButton 'F'
-        if(Input.GetButtonDown("Interact-Vehicle") && !player.activeInHierarchy)
+        if(Input.GetButtonDown("Interact-Vehicle") && !_player.activeInHierarchy)
             Exit();
         
         Health();
@@ -25,22 +25,19 @@ public class Vehicle : MonoBehaviour
 
     public void Enter()
     {
-        Driver driver = player.GetComponent<Driver>();
-        driver.gameObject.SetActive(false);
+        _player.SetActive(false);
         _carMovement.enabled = true;
     }
 
     private void Exit()
     {
-        //Vehicle [] _vehicles = FindObjectsOfType<Vehicle>();
-        if(isItMyCar)
-        {
-            player.SetActive(true);
-            //Move player a little so he doesn't spawn and push the car down 
-            player.transform.position = transform.position + new Vector3(2.5f,0f,0f);
-            _carMovement.enabled = false;
-            isItMyCar = false;
-        }
+        if (!isItMyCar) return;
+        
+        _player.SetActive(true);
+        //Move player a little so he doesn't spawn and push the car down 
+        _player.transform.position = transform.position + new Vector3(2.5f,0f,0f);
+        _carMovement.enabled = false;
+        isItMyCar = false;
     }
 
     public void OnCollisionEnter(Collision collision)

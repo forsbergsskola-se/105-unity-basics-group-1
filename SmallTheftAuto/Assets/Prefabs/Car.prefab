@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 2692027501258272868}
   m_Layer: 0
   m_Name: Car
-  m_TagString: Untagged
+  m_TagString: CarE
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -372,6 +372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   health: 30
+  isItMyCar: 0
 --- !u!1 &2692027501296753922
 GameObject:
   m_ObjectHideFlags: 0
