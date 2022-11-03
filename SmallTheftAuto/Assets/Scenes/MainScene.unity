@@ -1067,6 +1067,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 193004530925050803, guid: 003c19a3f7a201a49a595b4b9eef5076, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 193004531450781878, guid: 003c19a3f7a201a49a595b4b9eef5076, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2488749612932488051, guid: 003c19a3f7a201a49a595b4b9eef5076, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 003c19a3f7a201a49a595b4b9eef5076, type: 3}
 --- !u!1001 &8318090381079651334
@@ -1120,9 +1132,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8318090379591297482, guid: 17f0a2f641a9a014bbd74ba49028decf, type: 3}
+      propertyPath: m_Size.z
+      value: 1.0658919
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318090379591297482, guid: 17f0a2f641a9a014bbd74ba49028decf, type: 3}
+      propertyPath: m_Center.z
+      value: -0.03294593
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318090379591297482, guid: 17f0a2f641a9a014bbd74ba49028decf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8318090379591297485, guid: 17f0a2f641a9a014bbd74ba49028decf, type: 3}
       propertyPath: m_Name
       value: PhoneBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318090379591297485, guid: 17f0a2f641a9a014bbd74ba49028decf, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17f0a2f641a9a014bbd74ba49028decf, type: 3}

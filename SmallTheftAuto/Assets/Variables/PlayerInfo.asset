@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: PlayerInfo
   m_EditorClassIdentifier: 
   health: 100
+  money: 50
+  score: 50
+  hasQuest: 1
