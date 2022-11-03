@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
     public GameObject player;
     private CarMovement carMovement;
+    public int health;
 
     private void Start()
     {
@@ -20,6 +22,7 @@ public class Vehicle : MonoBehaviour
             if(!player.activeInHierarchy)
                 Exit();
                 
+        Health();
     }
 
     public void Enter()
@@ -34,5 +37,18 @@ public class Vehicle : MonoBehaviour
         player.SetActive(true);
         player.transform.position = transform.position + new Vector3(2.5f,0f,0f);
         carMovement.enabled = false;
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        health -= 10;
+    }
+
+    public void Health()
+    {
+        if (health == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
