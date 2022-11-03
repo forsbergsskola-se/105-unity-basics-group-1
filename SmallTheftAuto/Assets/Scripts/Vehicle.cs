@@ -42,7 +42,7 @@ public class Vehicle : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
          //if you want to add enemy cars, call it CarE
-        if(collision.gameObject.name == "Wall"||collision.gameObject.name=="CarE") 
+        if(collision.gameObject.CompareTag("Wall")||collision.gameObject.CompareTag("CarE")) 
             health -= 10;
         
         Debug.Log(collision.gameObject.name);
