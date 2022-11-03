@@ -9,6 +9,7 @@ public class CarMovement : MonoBehaviour
     public Rigidbody rigidBody;
     void FixedUpdate()
     {
+        //to see the car speed
         currSpeed = rigidBody.velocity.magnitude;
         
         if (currSpeed < maxSpeed)

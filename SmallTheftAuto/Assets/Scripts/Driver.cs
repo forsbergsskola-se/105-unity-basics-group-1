@@ -1,24 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Driver : MonoBehaviour
 {
-    Vehicle [] vehicles;
+    Vehicle [] _vehicles;
     public float lengthAwayFromPlayer;
     
     private void Update()
     {
         if (EnterCarButtonPressed() && IsPlayerCloseEnough())
-            vehicles[0].Enter();
+            _vehicles[0].Enter();
     }
     
     bool EnterCarButtonPressed()
     {
         if (Input.GetButtonDown("Interact-Vehicle"))
         {
-            vehicles = FindObjectsOfType<Vehicle>();
-            //Debug.Log(vehicles.Length);
+            _vehicles = FindObjectsOfType<Vehicle>();
             return true;
         }
 
@@ -27,7 +25,7 @@ public class Driver : MonoBehaviour
     
     bool IsPlayerCloseEnough()
     {
-        if(Vector3.Distance(transform.position, vehicles[0].transform.position) < lengthAwayFromPlayer) 
+        if(Vector3.Distance(transform.position, _vehicles[0].transform.position) < lengthAwayFromPlayer) 
             return true;
         return false;
     }
