@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
-    public GameObject player;
     private CarMovement _carMovement;
+    public GameObject player;
     public int health;
+    public bool isItMyCar;
 
     private void Start()
     {
@@ -15,10 +16,10 @@ public class Vehicle : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButtonDown("Interact-Vehicle"))
-            if(!player.activeInHierarchy)
-                Exit();
-                
+        //Todo: fix when we push getButton it shouldn't do a double getButton 'F'
+        if(Input.GetButtonDown("Interact-Vehicle") && !player.activeInHierarchy)
+            Exit();
+        
         Health();
     }
 
@@ -29,12 +30,17 @@ public class Vehicle : MonoBehaviour
         _carMovement.enabled = true;
     }
 
-    void Exit()
+    private void Exit()
     {
-        player.SetActive(true);
-        //Move player a little so he doesn't spawn and push the car down 
-        player.transform.position = transform.position + new Vector3(2.5f,0f,0f);
-        _carMovement.enabled = false;
+        //Vehicle [] _vehicles = FindObjectsOfType<Vehicle>();
+        if(isItMyCar)
+        {
+            player.SetActive(true);
+            //Move player a little so he doesn't spawn and push the car down 
+            player.transform.position = transform.position + new Vector3(2.5f,0f,0f);
+            _carMovement.enabled = false;
+            isItMyCar = false;
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
@@ -42,16 +48,13 @@ public class Vehicle : MonoBehaviour
          //if you want to add enemy cars, call it CarE
         if(collision.gameObject.CompareTag("Wall")||collision.gameObject.CompareTag("CarE")) 
             health -= 10;
-        
-        Debug.Log(collision.gameObject.name);
     }
 
-    void Health()
+    private void Health()
     {
+        //Todo: After Destroy make player.health = 0;
         if (health == 0)
-        {
             Destroy(gameObject);
-        }
     }
     
 }

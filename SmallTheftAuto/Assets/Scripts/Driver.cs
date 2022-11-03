@@ -1,32 +1,38 @@
-
 using UnityEngine;
 
 public class Driver : MonoBehaviour
 {
-    Vehicle [] _vehicles;
+    private Vehicle [] _vehicles;
     public float lengthAwayFromPlayer;
-    
+    private Vehicle _vehicle;
+
     private void Update()
     {
-        if (EnterCarButtonPressed() && IsPlayerCloseEnough())
-            _vehicles[0].Enter();
+        if (EnterCarButtonPressed())
+        {
+            float closestCar = 100f;
+            _vehicles = FindObjectsOfType<Vehicle>();
+            foreach (var t in _vehicles)
+            {
+                float nextCar = Vector3.Distance(t.transform.position, transform.position);
+                if(nextCar < closestCar)
+                {
+                    _vehicle = t;
+                    closestCar = nextCar;
+                }
+            }
+            if(IsPlayerCloseEnough())
+            {
+                _vehicle.isItMyCar = true;
+                _vehicle.Enter();
+            }
+        }
     }
     
-    bool EnterCarButtonPressed()
-    {
-        if (Input.GetButtonDown("Interact-Vehicle"))
-        {
-            _vehicles = FindObjectsOfType<Vehicle>();
-            return true;
-        }
-
-        return false;
-    }
+    bool EnterCarButtonPressed() => Input.GetButtonDown("Interact-Vehicle");
     
     bool IsPlayerCloseEnough()
     {
-        if(Vector3.Distance(transform.position, _vehicles[0].transform.position) < lengthAwayFromPlayer) 
-            return true;
-        return false;
+        return Vector3.Distance(transform.position, _vehicle.transform.position) < lengthAwayFromPlayer;
     }
 }

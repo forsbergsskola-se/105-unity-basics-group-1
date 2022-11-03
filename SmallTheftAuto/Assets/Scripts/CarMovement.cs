@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class CarMovement : MonoBehaviour
@@ -6,20 +7,26 @@ public class CarMovement : MonoBehaviour
     public float maxSpeed;
     public float currSpeed;
     public float rotationSpeed;
-    public Rigidbody rigidBody;
-    void FixedUpdate()
+    private Rigidbody _rigidBody;
+
+    private void Start()
+    {
+        _rigidBody = GetComponent<Rigidbody>();
+    }
+
+    private void FixedUpdate()
     {
         //to see the car speed
-        currSpeed = rigidBody.velocity.magnitude;
+        currSpeed = _rigidBody.velocity.magnitude;
         
         if (currSpeed < maxSpeed)
         {
-             rigidBody.AddRelativeForce(Vector3.right * (Input.GetAxis("Vertical") * movementSpeed));
+             _rigidBody.AddRelativeForce(Vector3.right * (Input.GetAxis("Vertical") * movementSpeed));
         }
         transform.Rotate(0f, Input.GetAxis("Horizontal") * rotationSpeed, 0f);
 
-        //Todo: fix so it doesn't keep decreasing after movementspeed < 0
+        //Todo: fix so it doesn't keep decreasing after movementSpeed < 0
         if (Input.GetKey(KeyCode.Space))
-            rigidBody.AddRelativeForce(-(Vector3.right * (Input.GetAxis("Vertical") * movementSpeed)));
+            _rigidBody.AddRelativeForce(-(Vector3.right * (Input.GetAxis("Vertical") * movementSpeed)));
     }
 }
