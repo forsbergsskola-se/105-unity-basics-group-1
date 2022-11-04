@@ -5,11 +5,16 @@ public class Vehicle : MonoBehaviour
 {
     private CarMovement _carMovement;
     private GameObject _player;
-    public int health;
+    private float _burn = 5;
+    public PlayerInfo playerInfo;
+    public float carHealth;
+    private float _carMaxHealth;
     public bool isItMyCar;
+    
 
     private void Start()
     {
+        _carMaxHealth = carHealth;
         _player = FindObjectOfType<PlayerMovement>().gameObject;
         _carMovement = GetComponent<CarMovement>();
     }
@@ -44,14 +49,24 @@ public class Vehicle : MonoBehaviour
     {
          //if you want to add enemy cars, call it CarE
         if(collision.gameObject.CompareTag("Wall")||collision.gameObject.CompareTag("CarE")) 
-            health -= 10;
+            carHealth -= 10;
     }
 
     private void Health()
     {
         //Todo: After Destroy make player.health = 0;
-        if (health == 0)
+        if (carHealth < 0)
+        {
             Destroy(gameObject);
+            //Call where the playerHealth script logic will be.
+            playerInfo.health = 0;
+            Debug.Log("Car Exploded");
+        }
+
+        if (carHealth <= _carMaxHealth / 2)
+        {
+            carHealth -= _burn  * Time.deltaTime;
+            Debug.Log("Car is Burning!!");
+        }
     }
-    
 }
