@@ -465,11 +465,11 @@ GameObject:
   - component: {fileID: 637005806}
   m_Layer: 0
   m_Name: Package
-  m_TagString: Untagged
+  m_TagString: Package
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &637005806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -541,7 +541,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637005805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.188586, y: -1.5237837, z: -2.5401497}
+  m_LocalPosition: {x: -8.67, y: 0.51, z: -5.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1116,6 +1116,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3025255450900760929, guid: 003c19a3f7a201a49a595b4b9eef5076, type: 3}
+      propertyPath: playerInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: 27fcf48586714d34f9d565ac4bf94d3b, type: 2}
     - target: {fileID: 193004530925050802, guid: 003c19a3f7a201a49a595b4b9eef5076, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -1247,7 +1251,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8318090379591297485, guid: 17f0a2f641a9a014bbd74ba49028decf, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: PhoneBox
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2614008329509412437, guid: 17f0a2f641a9a014bbd74ba49028decf, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 17f0a2f641a9a014bbd74ba49028decf, type: 3}
