@@ -1,9 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class Quest : MonoBehaviour 
 {
     public PlayerInfo playerInfo;
     public ActiveQuestInfo activeQuestInfo;
+    public TextMeshProUGUI questCompletedText;
     private GameObject[] packages;
     private void Start() {
         playerInfo.hasQuest = false;
@@ -23,12 +25,17 @@ public class Quest : MonoBehaviour
             playerInfo.hasQuest = false;
             activeQuestInfo.description = "";
             TogglePackages(false);
-            Debug.Log("Quest complete.");
+            questCompletedText.enabled = true;
+            Invoke("DisableText", 2.0f);
         }
     }
     void TogglePackages(bool state)
     {
         foreach (var package in packages) 
             package.GetComponent<MeshRenderer>().enabled = state;
+    }
+
+    void DisableText() {
+        questCompletedText.enabled = false;
     }
 }

@@ -10,9 +10,11 @@ public class UI : MonoBehaviour
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI questText;
+    public TextMeshProUGUI questCompleteText;
 
     private void Start() {
         activeQuestInfo.description = "";
+        questCompleteText.enabled = false;
     }
 
     void Update()
