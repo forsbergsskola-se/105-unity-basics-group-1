@@ -8,7 +8,7 @@ public class Fire : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            
+            col.GetComponent<Player>().TakeDamage(damage);
         }
     }
 }
