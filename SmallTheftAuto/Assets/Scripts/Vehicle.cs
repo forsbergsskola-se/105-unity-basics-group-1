@@ -65,7 +65,7 @@ public class Vehicle : MonoBehaviour
 
         if (carHealth <= _carMaxHealth / 2)
         {
-            carHealth -= _burn  * Time.deltaTime;
+            carHealth -= _burn * Time.deltaTime;
             Debug.Log("Car is Burning!!");
         }
     }
