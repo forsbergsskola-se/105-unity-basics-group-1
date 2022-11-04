@@ -34,7 +34,6 @@ public class Quest : MonoBehaviour
         foreach (var package in packages) 
             package.GetComponent<MeshRenderer>().enabled = state;
     }
-
     void DisableText() {
         questCompletedText.enabled = false;
     }
