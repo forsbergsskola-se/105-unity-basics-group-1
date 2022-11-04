@@ -1,28 +1,26 @@
 using TMPro;
 using UnityEngine;
 
-public class Quest : MonoBehaviour 
+public class Quest : MonoBehaviour
 {
-    public PlayerInfo playerInfo;
+    private bool _hasQuest;
     public ActiveQuestInfo activeQuestInfo;
     public TextMeshProUGUI questCompletedText;
-    private GameObject[] packages;
-    private void Start() {
-        playerInfo.hasQuest = false;
-    }
-    void OnTriggerEnter(Collider col) {
+    private GameObject[] _packages;
+    void OnTriggerEnter(Collider col)
+    {
+        _hasQuest = GetComponent<Player>().playerInfo.hasQuest;
         if (col.gameObject.CompareTag("PhoneBox"))
         {
-            Debug.Log("has quest");
-            if (playerInfo.hasQuest) return;
-            playerInfo.hasQuest = true;
-            packages = GameObject.FindGameObjectsWithTag("Package");
+            if (_hasQuest) return;
+            _hasQuest = true;
+            _packages = GameObject.FindGameObjectsWithTag("Package");
             TogglePackages(true);
             activeQuestInfo.description = "Pick up the package";
         }
-        if (playerInfo.hasQuest && col.gameObject.CompareTag("Package"))
+        if (_hasQuest && col.gameObject.CompareTag("Package"))
         {
-            playerInfo.hasQuest = false;
+            _hasQuest = false;
             activeQuestInfo.description = "";
             TogglePackages(false);
             questCompletedText.enabled = true;
@@ -31,10 +29,9 @@ public class Quest : MonoBehaviour
     }
     void TogglePackages(bool state)
     {
-        foreach (var package in packages) 
+        foreach (var package in _packages) 
             package.GetComponent<MeshRenderer>().enabled = state;
     }
-
     void DisableText() {
         questCompletedText.enabled = false;
     }
