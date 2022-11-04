@@ -1,8 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class Quest : MonoBehaviour 
 {
     public PlayerInfo playerInfo;
+    public ActiveQuestInfo activeQuestInfo;
+    public TextMeshProUGUI questCompletedText;
     private GameObject[] packages;
     private void Start() {
         playerInfo.hasQuest = false;
@@ -15,18 +18,24 @@ public class Quest : MonoBehaviour
             playerInfo.hasQuest = true;
             packages = GameObject.FindGameObjectsWithTag("Package");
             TogglePackages(true);
-            Debug.Log("Pick up the package");
+            activeQuestInfo.description = "Pick up the package";
         }
         if (playerInfo.hasQuest && col.gameObject.CompareTag("Package"))
         {
             playerInfo.hasQuest = false;
+            activeQuestInfo.description = "";
             TogglePackages(false);
-            Debug.Log("Quest complete.");
+            questCompletedText.enabled = true;
+            Invoke("DisableText", 2.0f);
         }
     }
     void TogglePackages(bool state)
     {
         foreach (var package in packages) 
             package.GetComponent<MeshRenderer>().enabled = state;
+    }
+
+    void DisableText() {
+        questCompletedText.enabled = false;
     }
 }
