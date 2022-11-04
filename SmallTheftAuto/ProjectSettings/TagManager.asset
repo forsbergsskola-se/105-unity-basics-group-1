@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Wall
   - CarE
+  - PhoneBox
+  - Package
   layers:
   - Default
   - TransparentFX
