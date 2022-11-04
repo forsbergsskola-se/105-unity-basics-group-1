@@ -59,7 +59,9 @@ public class Vehicle : MonoBehaviour
         {
             Destroy(gameObject);
             //Call where the playerHealth script logic will be.
-            playerInfo.health = 0;
+
+            Player playerScript = GetComponent<Player>();
+            playerScript.TakeDamage(1000);
             Debug.Log("Car Exploded");
         }
 
@@ -68,5 +70,10 @@ public class Vehicle : MonoBehaviour
             carHealth -= _burn * Time.deltaTime;
             Debug.Log("Car is Burning!!");
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        carHealth -= damage;
     }
 }

@@ -10,4 +10,14 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(0, 0, bulletSpeed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        Debug.Log(col.gameObject.tag);
+        if (col.gameObject.CompareTag("CarE"))
+        {
+            Vehicle car = FindObjectOfType<Vehicle>();
+            car.TakeDamage(10);
+        }
+    }
 }
