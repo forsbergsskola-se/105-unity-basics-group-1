@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
     
     void OnBecameInvisible()
     {
-        //Should be called when out of view in scene and/or game
+        //Should be called when out of view in scene and/or game view
         Destroy(gameObject);
     }
 }

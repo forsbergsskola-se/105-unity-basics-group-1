@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class Driver : MonoBehaviour
 {
+    private Vehicle _vehicle;
     private Vehicle [] _vehicles;
     public float lengthAwayFromPlayer;
-    private Vehicle _vehicle;
+    public bool hasPushedF;
 
     private void Update()
     {

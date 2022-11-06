@@ -20,9 +20,9 @@ public class Vehicle : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButtonDown("Interact-Vehicle") && !_player.activeInHierarchy)
+        if(isItMyCar && Input.GetButtonDown("Interact-Vehicle"))
             Exit();
-        
+
         Health();
     }
 
