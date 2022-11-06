@@ -6,9 +6,8 @@ public class Vehicle : MonoBehaviour
     private CarMovement _carMovement;
     private GameObject _player;
     private float _burn = 5;
-    public PlayerInfo playerInfo;
-    public float carHealth;
     private float _carMaxHealth;
+    public float carHealth;
     public bool isItMyCar;
     
 
@@ -21,7 +20,6 @@ public class Vehicle : MonoBehaviour
 
     private void Update()
     {
-        //Todo: fix when we push getButton it shouldn't do a double getButton 'F'
         if(Input.GetButtonDown("Interact-Vehicle") && !_player.activeInHierarchy)
             Exit();
         
@@ -54,14 +52,13 @@ public class Vehicle : MonoBehaviour
 
     private void Health()
     {
-        //Todo: After Destroy make player.health = 0;
         if (carHealth < 0)
         {
             Destroy(gameObject);
             //Call where the playerHealth script logic will be.
-
-            Player playerScript = GetComponent<Player>();
-            playerScript.TakeDamage(1000);
+            //Needs to know if player is in this car then take damage if so, else he dies when anyCar explodes
+            if (!isItMyCar) return;
+            _player.GetComponent<Player>().TakeDamage(100);
             Debug.Log("Car Exploded");
         }
 

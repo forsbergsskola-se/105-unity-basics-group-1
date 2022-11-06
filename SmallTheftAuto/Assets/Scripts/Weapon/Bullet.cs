@@ -16,8 +16,16 @@ public class Bullet : MonoBehaviour
         Debug.Log(col.gameObject.tag);
         if (col.gameObject.CompareTag("CarE"))
         {
-            Vehicle car = FindObjectOfType<Vehicle>();
+            Vehicle car = col.GetComponent<Vehicle>();
             car.TakeDamage(10);
         }
+        
+        Destroy(gameObject);
+    }
+    
+    void OnBecameInvisible()
+    {
+        //Should be called when out of view in scene and/or game
+        Destroy(gameObject);
     }
 }
