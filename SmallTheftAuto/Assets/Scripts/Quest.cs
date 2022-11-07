@@ -1,26 +1,27 @@
+using System;
 using TMPro;
 using UnityEngine;
 
 public class Quest : MonoBehaviour
 {
-    private bool _hasQuest;
     public ActiveQuestInfo activeQuestInfo;
     public TextMeshProUGUI questCompletedText;
+    public PlayerInfo playerInfo;
     private GameObject[] _packages;
+
     void OnTriggerEnter(Collider col)
-    {
-        _hasQuest = GetComponent<Player>().playerInfo.hasQuest;
+    { 
         if (col.gameObject.CompareTag("PhoneBox"))
         {
-            if (_hasQuest) return;
-            _hasQuest = true;
+            if (playerInfo.hasQuest) return;
+            playerInfo.hasQuest = true;
             _packages = GameObject.FindGameObjectsWithTag("Package");
             TogglePackages(true);
             activeQuestInfo.description = "Pick up the package";
         }
-        if (_hasQuest && col.gameObject.CompareTag("Package"))
+        if (playerInfo.hasQuest && col.gameObject.CompareTag("Package"))
         {
-            _hasQuest = false;
+            playerInfo.hasQuest = false;
             activeQuestInfo.description = "";
             TogglePackages(false);
             questCompletedText.enabled = true;

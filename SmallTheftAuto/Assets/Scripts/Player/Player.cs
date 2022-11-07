@@ -1,19 +1,19 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    public int health;
     public PlayerInfo playerInfo;
 
     void Awake()
     {
-        playerInfo.health = playerInfo.defaultHealth;
+        playerInfo.ResetDefaults();
     }
 
     public void TakeDamage(int damage)
     {
-        playerInfo.health -= damage;
+        playerInfo.Health -= damage;
     }
     
 }

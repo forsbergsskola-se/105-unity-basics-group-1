@@ -19,7 +19,7 @@ public class UI : MonoBehaviour
 
     void Update()
     {
-        healthText.SetText($"Health: {playerInfo.health}");
+        healthText.SetText($"Health: {playerInfo.Health}");
         moneyText.SetText($"Money: {playerInfo.money}");
         scoreText.SetText($"Score: {playerInfo.score}");
         questText.SetText($"{activeQuestInfo.description}");
