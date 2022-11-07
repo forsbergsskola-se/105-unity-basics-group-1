@@ -245,7 +245,7 @@ MonoBehaviour:
   moneyText: {fileID: 934733348}
   scoreText: {fileID: 588369855}
   questText: {fileID: 1943524140}
-  bigText: {fileID: 0}
+  bigText: {fileID: 1830309594}
 --- !u!114 &343934579
 MonoBehaviour:
   m_ObjectHideFlags: 0
