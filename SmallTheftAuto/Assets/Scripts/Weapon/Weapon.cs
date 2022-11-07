@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class Weapon : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class Weapon : MonoBehaviour
     private void Start()
     {
         currentAmmo = totalAmmo;
-        
+
     }
 
     private void Update()
@@ -38,7 +39,6 @@ public class Weapon : MonoBehaviour
             reload = false;
             currentAmmo = 15;
             timer = 2f;
-            
         }
     }
 }
