@@ -31,8 +31,5 @@ public class Driver : MonoBehaviour
     
     bool EnterCarButtonPressed() => Input.GetButtonDown("Interact-Vehicle");
     
-    bool IsPlayerCloseEnough()
-    {
-        return Vector3.Distance(transform.position, _vehicle.transform.position) < lengthAwayFromPlayer;
-    }
+    bool IsPlayerCloseEnough() => Vector3.Distance(transform.position, _vehicle.transform.position) < lengthAwayFromPlayer;
 }
