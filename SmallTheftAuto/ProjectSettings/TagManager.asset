@@ -9,6 +9,7 @@ TagManager:
   - PhoneBox
   - Package
   - BigText
+  - UI
   layers:
   - Default
   - TransparentFX

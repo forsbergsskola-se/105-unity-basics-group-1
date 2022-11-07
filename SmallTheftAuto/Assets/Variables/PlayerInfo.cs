@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,6 +15,11 @@ public class PlayerInfo : ScriptableObject
         set {
             _health = value;
             healthChange?.Invoke(value);
+            if (_health < 1) {
+                GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().enabled = false;
+                GameObject.FindWithTag("UI").GetComponent<UI>().PlayerDead();
+
+            }
         }
     }
     

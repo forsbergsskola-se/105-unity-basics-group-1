@@ -1,6 +1,7 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour
 {
@@ -10,11 +11,11 @@ public class UI : MonoBehaviour
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI questText;
-    public TextMeshProUGUI questCompleteText;
+    public TextMeshProUGUI bigText;
 
     private void Start() {
         activeQuestInfo.description = "";
-        questCompleteText.enabled = false;
+        bigText.enabled = false;
     }
 
     void Update()
@@ -23,5 +24,11 @@ public class UI : MonoBehaviour
         moneyText.SetText($"Money: {playerInfo.money}");
         scoreText.SetText($"Score: {playerInfo.score}");
         questText.SetText($"{activeQuestInfo.description}");
+    }
+
+    public void PlayerDead() {
+        bigText.SetText("Wasted");
+        bigText.enabled = true;
+        // load scene here later
     }
 }
