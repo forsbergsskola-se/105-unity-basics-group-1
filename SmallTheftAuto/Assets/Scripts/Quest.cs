@@ -1,13 +1,17 @@
-using System;
 using TMPro;
 using UnityEngine;
 
 public class Quest : MonoBehaviour
 {
     public ActiveQuestInfo activeQuestInfo;
-    public TextMeshProUGUI questCompletedText;
+    public TextMeshProUGUI bigText;
     public PlayerInfo playerInfo;
     private GameObject[] _packages;
+
+    private void Start()
+    {
+        bigText = GameObject.FindWithTag("BigText").GetComponent<TextMeshProUGUI>();
+    }
 
     void OnTriggerEnter(Collider col)
     { 
@@ -24,7 +28,8 @@ public class Quest : MonoBehaviour
             playerInfo.hasQuest = false;
             activeQuestInfo.description = "";
             TogglePackages(false);
-            questCompletedText.enabled = true;
+            bigText.SetText("Quest Completed");
+            bigText.enabled = true;
             Invoke("DisableText", 2.0f);
         }
     }
@@ -34,6 +39,6 @@ public class Quest : MonoBehaviour
             package.GetComponent<MeshRenderer>().enabled = state;
     }
     void DisableText() {
-        questCompletedText.enabled = false;
+        bigText.enabled = false;
     }
 }
