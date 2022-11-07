@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84986290ca41a4429c5201a9b67c0d1, type: 3}
   m_Name: PlayerInfo
   m_EditorClassIdentifier: 
+  defaultHealth: 100
+  defaultMoney: 200
+  defaultScore: 500
   health: 100
-  money: 50
-  score: 50
-  hasQuest: 1
+  money: 200
+  score: 500
+  hasQuest: 0
