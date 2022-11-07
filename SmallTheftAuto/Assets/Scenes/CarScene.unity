@@ -634,6 +634,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2824739398304120620, guid: 003c19a3f7a201a49a595b4b9eef5076, type: 3}
   m_PrefabInstance: {fileID: 178921375}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1370604836 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2939817025242501490, guid: 003c19a3f7a201a49a595b4b9eef5076, type: 3}
+  m_PrefabInstance: {fileID: 178921375}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370604834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9de30dd81539b840930252389897f41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1370604839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -648,6 +659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 398625754758249788, guid: acc46aa58514eac4eaa55698f7680c5b, type: 3}
   firePoint: {fileID: 1797998369}
+  weapon: {fileID: 1370604836}
 --- !u!1001 &1755484292
 PrefabInstance:
   m_ObjectHideFlags: 0
