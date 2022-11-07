@@ -5,14 +5,40 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
-    public GameObject bullet;
-    public Transform firePoint;
+    public int totalAmmo = 15;
+    public int currentAmmo;
+    public float timer = 2f;
+    public bool reload;
+    
+    private void Start()
+    {
+        currentAmmo = totalAmmo;
+        
+    }
+
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        Debug.Log(currentAmmo);
+        if (currentAmmo == 0)
         {
-            var transform1 = firePoint.transform;
-            Instantiate(bullet, transform1.position, transform1.rotation );
+            reload = true;
+            Shoot();
+            
+        }
+    }
+
+    void Shoot()
+    {
+        if (timer > 0)
+        {
+            timer -= Time.deltaTime;
+        }
+        if(timer < 0)
+        {
+            reload = false;
+            currentAmmo = 15;
+            timer = 2f;
+            
         }
     }
 }
