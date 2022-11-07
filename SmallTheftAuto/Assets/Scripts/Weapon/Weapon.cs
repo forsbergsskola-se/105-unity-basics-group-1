@@ -7,7 +7,6 @@ public class Weapon : MonoBehaviour
 {
     public GameObject bullet;
     public Transform firePoint;
-    public GameObject player;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))

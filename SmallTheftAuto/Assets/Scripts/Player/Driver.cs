@@ -5,7 +5,6 @@ public class Driver : MonoBehaviour
     private Vehicle _vehicle;
     private Vehicle [] _vehicles;
     public float lengthAwayFromPlayer;
-    public bool hasPushedF;
 
     private void Update()
     {
