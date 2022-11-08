@@ -314,7 +314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 182edf5f61b06bb4aa942fc35fc1fa6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 649232738}
+  target: {fileID: 649232738}
   cameraSpeed: 2.5
 --- !u!1 &649232738 stripped
 GameObject:
@@ -577,7 +577,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7441470749413623592, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}
