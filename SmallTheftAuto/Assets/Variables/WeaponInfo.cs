@@ -10,9 +10,4 @@ public class WeaponInfo : ScriptableObject
     public int totalAmmo;
     public int currentAmmo;
     
-    public void GetName()
-    {
-        // nameOfWeapon = GameObject.FindObjectOfType<>().name;
-        totalAmmo = FindObjectOfType<Weapon>().GetComponent<Weapon>().totalAmmo;
-    }
 }

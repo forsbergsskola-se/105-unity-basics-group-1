@@ -32,7 +32,6 @@ public class WeaponSwitching : MonoBehaviour
         foreach (Transform weapon in transform)
         {
             weapon.gameObject.SetActive(i == selectWeapon);
-
             i++;
             
             /* same as above

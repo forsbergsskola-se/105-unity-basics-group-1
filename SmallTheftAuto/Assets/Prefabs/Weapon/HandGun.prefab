@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 398625754758249788, guid: acc46aa58514eac4eaa55698f7680c5b, type: 3}
+  weaponInfo: {fileID: 11400000, guid: fa20bff012cac384dbcc73a3e4e3f00f, type: 2}
 --- !u!114 &7978414382385339282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9de30dd81539b840930252389897f41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponInfo: {fileID: 11400000, guid: fa20bff012cac384dbcc73a3e4e3f00f, type: 2}
   totalAmmo: 15
   currentAmmo: 0
   timer: 2

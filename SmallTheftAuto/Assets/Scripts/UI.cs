@@ -26,8 +26,7 @@ public class UI : MonoBehaviour
         moneyText.SetText($"Money: {playerInfo.money}");
         scoreText.SetText($"Score: {playerInfo.score}");
         questText.SetText($"{activeQuestInfo.description}");
-        weapon.SetText($"{weaponInfo.nameOfWeapon}");
-        weapon.SetText($"{weaponInfo.totalAmmo}");
+        weapon.SetText($"{weaponInfo.nameOfWeapon}: {weaponInfo.currentAmmo}/{weaponInfo.totalAmmo}");
     }
 
     public void PlayerDead() {

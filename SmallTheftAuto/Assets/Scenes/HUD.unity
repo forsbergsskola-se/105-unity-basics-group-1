@@ -162,6 +162,8 @@ MonoBehaviour:
   scoreText: {fileID: 588369855}
   questText: {fileID: 1943524140}
   bigText: {fileID: 1830309594}
+  weapon: {fileID: 1334054530}
+  weaponInfo: {fileID: 11400000, guid: fa20bff012cac384dbcc73a3e4e3f00f, type: 2}
 --- !u!114 &343934579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,11 +689,11 @@ RectTransform:
   m_Father: {fileID: 343934582}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 98.16698, y: 0}
+  m_SizeDelta: {x: 399.8554, y: 50}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1334054530
 MonoBehaviour:
   m_ObjectHideFlags: 0
