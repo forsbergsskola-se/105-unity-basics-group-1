@@ -311,6 +311,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 193004530925050803, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}
   m_PrefabInstance: {fileID: 74968349}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &182237865 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 193004530925050802, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}
+  m_PrefabInstance: {fileID: 74968349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &264712400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -564,6 +569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 182237858}
   cameraSpeed: 2
+  target2: {fileID: 182237865}
+  offset2: {x: 0, y: 4, z: 0}
+  smoothTime: 0.25
 --- !u!1 &1178300289
 GameObject:
   m_ObjectHideFlags: 0
