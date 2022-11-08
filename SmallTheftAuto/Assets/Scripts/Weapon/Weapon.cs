@@ -14,8 +14,7 @@ public class Weapon : MonoBehaviour
         weaponInfo.currentAmmo = currentAmmo = totalAmmo;
     }
 
-    private void Update()
-    {
+    private void Update() {
         if (currentAmmo == 0)
         {
             reload = true;
@@ -28,6 +27,7 @@ public class Weapon : MonoBehaviour
 
         //Change to when changing weapons
         weaponInfo.totalAmmo = totalAmmo;
+        weaponInfo.currentAmmo = currentAmmo;
         //weaponInfo.nameOfWeapon = GetComponent<Transform>().GetChild(0).name;
         weaponInfo.nameOfWeapon = GetComponent<Transform>().name;
 
