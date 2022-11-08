@@ -28,10 +28,14 @@ public class UI : MonoBehaviour
         questText.SetText($"{activeQuestInfo.description}");
         if(weaponInfo.currentAmmo != 0)
             weapon.SetText($"{weaponInfo.nameOfWeapon}: {weaponInfo.currentAmmo}/{weaponInfo.totalAmmo}");
-        else
+        else if (weaponInfo.nameOfWeapon == "Fists")
         {
+            weapon.SetText($"Fists");
+        }
+        else {
             weapon.SetText($"Press 'R' To Reload");
         }
+        
     }
 
     public void PlayerDead() {
