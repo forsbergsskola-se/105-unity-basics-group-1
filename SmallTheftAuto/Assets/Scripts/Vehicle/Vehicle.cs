@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
+    private Camera _camera;
     public GameObject fire;
     private CarMovement _carMovement;
     private GameObject _player;
@@ -15,6 +16,7 @@ public class Vehicle : MonoBehaviour
     private void Start()
     {
         _carMaxHealth = carHealth;
+        _camera = FindObjectOfType<Camera>();
         _player = FindObjectOfType<PlayerMovement>().gameObject;
         _carMovement = GetComponent<CarMovement>();
     }
@@ -23,12 +25,12 @@ public class Vehicle : MonoBehaviour
     {
         if(isItMyCar && Input.GetButtonDown("Interact-Vehicle"))
             Exit();
-
         Health();
     }
 
     public void Enter()
     {
+        _camera.ChangeTarget(gameObject);
         _player.SetActive(false);
         _carMovement.enabled = true;
     }
@@ -42,6 +44,7 @@ public class Vehicle : MonoBehaviour
         _player.transform.position = transform.position + new Vector3(2.5f,0f,0f);
         _carMovement.enabled = false;
         isItMyCar = false;
+        _camera.ChangeTarget(_player.gameObject);
     }
 
     public void OnCollisionEnter(Collision collision)

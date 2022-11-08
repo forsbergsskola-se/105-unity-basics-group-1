@@ -12,7 +12,7 @@ public class Camera : MonoBehaviour {
         // transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 10, player.transform.position.z);
     }
 
-    void ChangeTarget(GameObject target)
+    public void ChangeTarget(GameObject target)
     {
         this.target = target;
     }
