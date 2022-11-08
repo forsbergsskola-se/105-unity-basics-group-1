@@ -9,11 +9,11 @@ public class PlayerInfo : ScriptableObject
     public SaveInfo saveInfo;
     private Player _player;
     public int Health {
-        get => _health;
+        get => health;
         set {
-            _health = value;
-            if (_health < 1) {
-                _health = 0;
+            health = value;
+            if (health < 1) {
+                health = 0;
                 GameObject player = GameObject.FindWithTag("Player");
                 player.GetComponent<PlayerMovement>().enabled = false;
                 // player.GetComponent<Shoot>().enabled = false;
@@ -25,19 +25,19 @@ public class PlayerInfo : ScriptableObject
     public int money;
     public int score;
     public bool hasQuest;
-    int _health;
+    int health;
 
     public void SetPlayerInfo(Player player) {
         if (!saveInfo.hasSaved)
         {
-            _health = defaultHealth;
+            health = defaultHealth;
             money = defaultMoney;
             score = defaultScore;
             hasQuest = false;
         }
         else
         {
-            _health = saveInfo.health;
+            health = saveInfo.health;
             money = saveInfo.money;
             score = saveInfo.score;
             player.transform.position = saveInfo.playerPosition;

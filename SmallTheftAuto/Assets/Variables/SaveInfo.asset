@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SaveInfo
   m_EditorClassIdentifier: 
   hasSaved: 0
-  health: 100
+  health: 85
   money: 200
   score: 500
-  playerPosition: {x: 0.5704167, y: 0.5, z: 4.720659}
+  playerPosition: {x: -1.1015586, y: 0.5, z: 6.081131}
