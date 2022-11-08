@@ -1,6 +1,4 @@
-using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
@@ -15,5 +13,5 @@ public class Player : MonoBehaviour
     {
         playerInfo.Health -= damage;
     }
-    
+       
 }

@@ -1,13 +1,13 @@
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
-    public float movementSpeed = 15f;
-    public float maxSpeed = 5;
-    public float rotationSpeed = 5f;
+    public float movementSpeed;
+    public float maxSpeed;
+    public float rotationSpeed;
     public Rigidbody _rigidbody;
-    void FixedUpdate() {
+    void Update() {
         if (_rigidbody.velocity.magnitude < maxSpeed)
-            _rigidbody.AddRelativeForce(Vector3.forward * (Input.GetAxis("Vertical") * movementSpeed));
-        transform.Rotate(0f, Input.GetAxis("Horizontal") * rotationSpeed, 0f);
+            _rigidbody.transform.Translate(Vector3.forward * (Input.GetAxisRaw("Vertical") * movementSpeed * Time.deltaTime));
+        transform.Rotate(Vector3.up * (Input.GetAxisRaw("Horizontal") * rotationSpeed * Time.deltaTime));
     }
 }

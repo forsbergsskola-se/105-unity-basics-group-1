@@ -430,6 +430,14 @@ PrefabInstance:
       propertyPath: questCompletedText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 193004530925050797, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}
+      propertyPath: movementSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 193004530925050797, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}
+      propertyPath: rotationSpeed
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 193004530925050802, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}
       propertyPath: m_RootOrder
       value: 0

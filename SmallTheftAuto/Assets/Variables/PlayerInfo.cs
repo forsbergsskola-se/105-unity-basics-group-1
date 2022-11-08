@@ -16,9 +16,9 @@ public class PlayerInfo : ScriptableObject
             _health = value;
             healthChange?.Invoke(value);
             if (_health < 1) {
+                _health = 0;
                 GameObject.FindWithTag("Player").GetComponent<PlayerMovement>().enabled = false;
                 GameObject.FindWithTag("UI").GetComponent<UI>().PlayerDead();
-
             }
         }
     }

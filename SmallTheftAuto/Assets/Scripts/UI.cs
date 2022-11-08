@@ -20,6 +20,7 @@ public class UI : MonoBehaviour
 
     void Update()
     {
+        //TODO: fix this
         healthText.SetText($"Health: {playerInfo.Health}");
         moneyText.SetText($"Money: {playerInfo.money}");
         scoreText.SetText($"Score: {playerInfo.score}");
@@ -29,6 +30,11 @@ public class UI : MonoBehaviour
     public void PlayerDead() {
         bigText.SetText("Wasted");
         bigText.enabled = true;
-        // load scene here later
+        Invoke("ReloadScene", 3f);
+    }
+
+    void ReloadScene() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Scenes/HUD", LoadSceneMode.Additive);
     }
 }
