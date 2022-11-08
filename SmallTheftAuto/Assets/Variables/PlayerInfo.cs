@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerInfo : ScriptableObject
 {
-    public int defaultHealth;
+    public int maxHealth;
     public int defaultMoney;
     public int defaultScore;
     public SaveInfo saveInfo;
@@ -19,6 +19,7 @@ public class PlayerInfo : ScriptableObject
                 // player.GetComponent<Shoot>().enabled = false;
                 GameObject.FindWithTag("UI").GetComponent<UI>().PlayerDead();
             }
+            else if (health > maxHealth) health = maxHealth;
         }
     }
     
@@ -30,7 +31,7 @@ public class PlayerInfo : ScriptableObject
     public void SetPlayerInfo(Player player) {
         if (!saveInfo.hasSaved)
         {
-            health = defaultHealth;
+            health = maxHealth;
             money = defaultMoney;
             score = defaultScore;
             hasQuest = false;
@@ -38,7 +39,7 @@ public class PlayerInfo : ScriptableObject
         else
         {
             health = saveInfo.health;
-            money = saveInfo.money;
+            money = saveInfo.money / 2;
             score = saveInfo.score;
             player.transform.position = saveInfo.playerPosition;
         }

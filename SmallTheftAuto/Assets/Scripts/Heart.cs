@@ -15,8 +15,11 @@ public class Heart : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))
         {
-            _player.playerInfo.Health += healPoints;
-            Destroy(gameObject);
+            if (_player.playerInfo.Health != _player.playerInfo.maxHealth)
+            {
+                _player.playerInfo.Health += healPoints;
+                Destroy(gameObject);
+            }
         }
     }
 
