@@ -6,7 +6,8 @@ public class Player : MonoBehaviour
 
     void Awake()
     {
-        playerInfo.ResetDefaults();
+        Debug.Log("waking up");
+        playerInfo.SetPlayerInfo(this);
     }
 
     public void TakeDamage(int damage)

@@ -9,13 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f84986290ca41a4429c5201a9b67c0d1, type: 3}
-  m_Name: PlayerInfo
+  m_Script: {fileID: 11500000, guid: 6c54663886f0f5147a10d116bb9da8c0, type: 3}
+  m_Name: SaveInfo
   m_EditorClassIdentifier: 
-  defaultHealth: 100
-  defaultMoney: 200
-  defaultScore: 500
-  saveInfo: {fileID: 11400000, guid: 4fd773ed803d18548b87c46c35b77bfa, type: 2}
+  hasSaved: 0
+  health: 100
   money: 200
   score: 500
-  hasQuest: 0
+  playerPosition: {x: 0.5704167, y: 0.5, z: 4.720659}

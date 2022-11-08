@@ -13,7 +13,6 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        Debug.Log(col.gameObject.tag);
         if (col.gameObject.CompareTag("CarE"))
         {
             Vehicle car = col.GetComponent<Vehicle>();

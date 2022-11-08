@@ -4,7 +4,7 @@ using UnityEngine;
 public class Quest : MonoBehaviour
 {
     public ActiveQuestInfo activeQuestInfo;
-    public TextMeshProUGUI bigText;
+    [HideInInspector] public TextMeshProUGUI bigText;
     public PlayerInfo playerInfo;
     private GameObject[] _packages;
 
