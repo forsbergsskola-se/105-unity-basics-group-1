@@ -11,6 +11,8 @@ public class UI : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI questText;
     public TextMeshProUGUI bigText;
+    public TextMeshProUGUI weapon;
+    public WeaponInfo weaponInfo;
 
     private void Start() {
         activeQuestInfo.description = "";
@@ -24,6 +26,8 @@ public class UI : MonoBehaviour
         moneyText.SetText($"Money: {playerInfo.money}");
         scoreText.SetText($"Score: {playerInfo.score}");
         questText.SetText($"{activeQuestInfo.description}");
+        weapon.SetText($"{weaponInfo.nameOfWeapon}");
+        weapon.SetText($"{weaponInfo.totalAmmo}");
     }
 
     public void PlayerDead() {
