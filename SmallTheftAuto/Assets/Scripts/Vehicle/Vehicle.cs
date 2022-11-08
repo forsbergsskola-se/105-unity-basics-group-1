@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Vehicle : MonoBehaviour
 {
+    public GameObject fire;
     private CarMovement _carMovement;
     private GameObject _player;
     private float _burn = 5;
@@ -60,6 +61,9 @@ public class Vehicle : MonoBehaviour
             if (!isItMyCar) return;
             _player.GetComponent<Player>().TakeDamage(100);
             Debug.Log("Car Exploded");
+            Instantiate(fire, transform.position, transform.rotation );
+            carHealth = 0;
+
         }
 
         if (carHealth <= _carMaxHealth / 2)

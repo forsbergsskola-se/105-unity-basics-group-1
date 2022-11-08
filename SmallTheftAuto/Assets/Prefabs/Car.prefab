@@ -329,6 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387fc425e2120b643abfb89afdef9c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fire: {fileID: 7422130487910198007, guid: 53404e52675b40b4894d29dcfb162bbd, type: 3}
   carHealth: 60
   isItMyCar: 0
 --- !u!65 &3068990415142920081
