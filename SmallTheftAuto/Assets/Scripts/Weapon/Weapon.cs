@@ -1,8 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.XR;
 
 public class Weapon : MonoBehaviour
 {
@@ -10,6 +7,7 @@ public class Weapon : MonoBehaviour
     public int currentAmmo;
     public float timer = 2f;
     public bool reload;
+    private bool _isReloading;
     
     private void Start()
     {
@@ -23,9 +21,15 @@ public class Weapon : MonoBehaviour
         if (currentAmmo == 0)
         {
             reload = true;
-            Shoot();
+
+            if (Input.GetKeyDown(KeyCode.R))
+                _isReloading = true;
+                
             
         }
+        
+        if(_isReloading)
+            Shoot();
     }
 
     void Shoot()
@@ -37,6 +41,7 @@ public class Weapon : MonoBehaviour
         if(timer < 0)
         {
             reload = false;
+            _isReloading = false;
             currentAmmo = 15;
             timer = 2f;
         }
