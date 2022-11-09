@@ -24,7 +24,7 @@ public class Driver : MonoBehaviour
             if(IsPlayerCloseEnough())
             {
                 _vehicle.isItMyCar = true;
-                _vehicle.Enter();
+                _vehicle.Enter(_vehicle);
             }
         }
     }

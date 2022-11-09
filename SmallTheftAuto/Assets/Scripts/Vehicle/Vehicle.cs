@@ -23,16 +23,16 @@ public class Vehicle : MonoBehaviour
 
     private void Update()
     {
-        if(isItMyCar && Input.GetButtonDown("Interact-Vehicle"))
+        if(isItMyCar && Input.GetButtonDown("Interact-Vehicle") && !_player.gameObject.activeInHierarchy)
             Exit();
         Health();
     }
 
-    public void Enter()
+    public void Enter(Vehicle car)
     {
         _camera.ChangeTarget(gameObject);
         _player.gameObject.SetActive(false);
-        _carMovement.enabled = true;
+        car._carMovement.enabled = true;
     }
 
     private void Exit()
