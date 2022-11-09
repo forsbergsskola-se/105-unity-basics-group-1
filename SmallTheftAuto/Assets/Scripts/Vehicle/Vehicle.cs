@@ -6,7 +6,7 @@ public class Vehicle : MonoBehaviour
     private Camera _camera;
     public GameObject fire;
     private CarMovement _carMovement;
-    private GameObject _player;
+    private Player _player;
     private float _burn = 5;
     private float _carMaxHealth;
     public float carHealth;
@@ -17,7 +17,7 @@ public class Vehicle : MonoBehaviour
     {
         _carMaxHealth = carHealth;
         _camera = FindObjectOfType<Camera>();
-        _player = FindObjectOfType<PlayerMovement>().gameObject;
+        _player = FindObjectOfType<Player>();
         _carMovement = GetComponent<CarMovement>();
     }
 
@@ -31,7 +31,7 @@ public class Vehicle : MonoBehaviour
     public void Enter()
     {
         _camera.ChangeTarget(gameObject);
-        _player.SetActive(false);
+        _player.gameObject.SetActive(false);
         _carMovement.enabled = true;
     }
 
@@ -39,7 +39,7 @@ public class Vehicle : MonoBehaviour
     {
         if (!isItMyCar) return;
         
-        _player.SetActive(true);
+        _player.gameObject.SetActive(true);
         //Move player a little so he doesn't spawn and push the car down 
         _player.transform.position = transform.position + new Vector3(2.5f,0f,0f);
         _carMovement.enabled = false;
@@ -63,7 +63,8 @@ public class Vehicle : MonoBehaviour
             Instantiate(fire, transform.position, transform.rotation );
             //Needs to know if player is in this car then take damage if so, else he dies when anyCar explodes
             if (!isItMyCar) return;
-            _player.GetComponent<Player>().TakeDamage(100);
+            if (!_player.gameObject.activeInHierarchy) _player.gameObject.SetActive(true);
+            _player.TakeDamage(_player.playerInfo.maxHealth);
             Debug.Log("Car Exploded");
             carHealth = 0;
         }
