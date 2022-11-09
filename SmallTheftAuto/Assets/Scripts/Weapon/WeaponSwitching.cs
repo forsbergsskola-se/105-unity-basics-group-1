@@ -34,6 +34,8 @@ public class WeaponSwitching : MonoBehaviour
             weapon.gameObject.SetActive(i == selectWeapon);
             i++;
             
+            //Works to reset reload timer when switching weapon
+            weapon.gameObject.GetComponent<Weapon>().ResetReload();
             /* same as above
             if( i == selectWeapon)
                 weapon.gameObject.SetActive(true);
