@@ -5,7 +5,7 @@ public class Weapon : MonoBehaviour
     public WeaponInfo weaponInfo;
     public int totalAmmo;
     public int currentAmmo;
-    public float reLoadTimer = 2f;
+    public float reloadTimer = 2f;
     public bool isReloading;
     
     private void Start()
@@ -35,18 +35,18 @@ public class Weapon : MonoBehaviour
     {
         //This needs to reset when changing weapons else he keeps reloading when we switch back
         isReloading = false;
-        reLoadTimer = 2;
+        reloadTimer = 2;
     }
 
     private void Reloading()
     {
-        if (reLoadTimer > 0)
-            reLoadTimer -= Time.deltaTime;
-        if(reLoadTimer < 0)
+        if (reloadTimer > 0)
+            reloadTimer -= Time.deltaTime;
+        if(reloadTimer < 0)
         {
             isReloading = false;
             currentAmmo = totalAmmo;
-            reLoadTimer = 2f;
+            reloadTimer = 2f;
             weaponInfo.currentAmmo = totalAmmo;
         }
     }
