@@ -19,8 +19,11 @@ public class Camera : MonoBehaviour {
         // transform.position = new Vector3(player.transform.position.x, player.transform.position.y + 10, player.transform.position.z);
         
         //testing new camera dampen
-        Vector3 targetPosition = target.transform.position + offset;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        if(target != null) 
+        {
+            Vector3 targetPosition = target.transform.position + offset;
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+        }
     }
 
     public void ChangeTarget(GameObject target)

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public WeaponInfo weaponInfo;
-    public int totalAmmo = 15;
+    public int totalAmmo;
     public int currentAmmo;
     public float timer = 2f;
     public bool reload;
@@ -41,7 +41,7 @@ public class Weapon : MonoBehaviour
         {
             reload = false;
             _isReloading = false;
-            currentAmmo = 15;
+            currentAmmo = totalAmmo;
             timer = 2f;
             weaponInfo.currentAmmo = totalAmmo;
         }

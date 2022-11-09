@@ -59,14 +59,13 @@ public class Vehicle : MonoBehaviour
         if (carHealth < 0)
         {
             Destroy(gameObject);
-            //Call where the playerHealth script logic will be.
+            //Spawns fire when car dies
+            Instantiate(fire, transform.position, transform.rotation );
             //Needs to know if player is in this car then take damage if so, else he dies when anyCar explodes
             if (!isItMyCar) return;
             _player.GetComponent<Player>().TakeDamage(100);
             Debug.Log("Car Exploded");
-            Instantiate(fire, transform.position, transform.rotation );
             carHealth = 0;
-
         }
 
         if (carHealth <= _carMaxHealth / 2)
