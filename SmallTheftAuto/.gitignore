@@ -549,3 +549,9 @@ FodyWeavers.xsd
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
+
+
+Assets/Triangularity/ColorfulCity/Scenes/All Buildings Colors.unity
+Assets/Triangularity/ColorfulCity/Scenes/All Buildings Colors.unity.meta
+Assets/Triangularity/ColorfulCity/Scenes/Buildings Showcase.unity
+Assets/Triangularity/ColorfulCity/Scenes/Buildings Showcase.unity.meta
