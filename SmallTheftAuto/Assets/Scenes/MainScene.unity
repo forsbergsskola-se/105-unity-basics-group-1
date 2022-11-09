@@ -316,6 +316,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 649232738}
   cameraSpeed: 0.2
+  target2: {fileID: 0}
+  offset2: {x: 0, y: 4, z: 0}
+  smoothTime: 0
 --- !u!1 &649232738 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 193004530925050803, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}

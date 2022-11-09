@@ -22,14 +22,20 @@ public class Quest : MonoBehaviour
             _packages = GameObject.FindGameObjectsWithTag("Package");
             TogglePackages(true);
             activeQuestInfo.description = "Pick up the package";
+            activeQuestInfo.rewardMoney = 51;
+            activeQuestInfo.rewardScore = 35;
         }
         if (playerInfo.hasQuest && col.gameObject.CompareTag("Package"))
         {
             playerInfo.hasQuest = false;
-            activeQuestInfo.description = "";
             TogglePackages(false);
             bigText.SetText("Quest Completed");
             bigText.enabled = true;
+            playerInfo.money += activeQuestInfo.rewardMoney;
+            playerInfo.score += activeQuestInfo.rewardScore;
+            activeQuestInfo.description = "";
+            activeQuestInfo.rewardMoney = 0;
+            activeQuestInfo.rewardScore = 0;
             Invoke("DisableText", 2.0f);
         }
     }
