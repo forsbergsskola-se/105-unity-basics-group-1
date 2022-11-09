@@ -56,13 +56,18 @@ public class Vehicle : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
          //if you want to add enemy cars, call it CarE
-        if(collision.gameObject.CompareTag("Wall")||collision.gameObject.CompareTag("CarE")) 
-            carHealth -= 10;
+         if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("CarE"))
+             carHealth -= _carMovement.currSpeed;
     }
 
     private void Health()
     {
         healthBar.fillAmount = carHealth / _carMaxHealth;
+        
+        //Shows healthbar on cars when damaged
+        if(carHealth != _carMaxHealth)
+            healthBar.transform.parent.gameObject.SetActive(true);
+        
         if (carHealth < 0)
         {
             Destroy(gameObject);
@@ -85,8 +90,6 @@ public class Vehicle : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        //Shows healthbar on cars when damaged
-        healthBar.transform.parent.gameObject.SetActive(true);
         carHealth -= damage;
     }
 }
