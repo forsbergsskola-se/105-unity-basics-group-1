@@ -1,5 +1,6 @@
 
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Vehicle : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class Vehicle : MonoBehaviour
     public float carHealth;
     public bool isItMyCar;
     
+    //testing 
+    public Image healthBar;
+    
 
     private void Start()
     {
@@ -23,7 +27,9 @@ public class Vehicle : MonoBehaviour
 
     private void Update()
     {
-        if(isItMyCar && Input.GetButtonDown("Interact-Vehicle") && !_player.gameObject.activeInHierarchy)
+        if(Input.GetButtonDown("Interact-Vehicle") && isItMyCar)
+            Debug.Log("Test");
+        if(isItMyCar && Input.GetButtonDown("Interact-Vehicle") && !_player.gameObject.activeInHierarchy) 
             Exit();
         Health();
     }
@@ -56,6 +62,7 @@ public class Vehicle : MonoBehaviour
 
     private void Health()
     {
+        healthBar.fillAmount = carHealth / _carMaxHealth;
         if (carHealth < 0)
         {
             Destroy(gameObject);
@@ -78,6 +85,8 @@ public class Vehicle : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        //Shows healthbar on cars when damaged
+        healthBar.transform.parent.gameObject.SetActive(true);
         carHealth -= damage;
     }
 }
