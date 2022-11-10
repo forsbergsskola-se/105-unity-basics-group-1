@@ -70,7 +70,10 @@ public class Vehicle : MonoBehaviour
     {
          //if you want to add enemy cars, call it CarE
          if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("CarE"))
+         {
              carHealth -= _carMovement.currSpeed;
+             collision.gameObject.GetComponent<Vehicle>().carHealth -= _carMovement.currSpeed;
+         }
     }
 
     private void Health()
