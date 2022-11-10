@@ -31,12 +31,9 @@ public class Vehicle : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetButtonDown("Interact-Vehicle") && isItMyCar)
-            Debug.Log("Test");
         if(isItMyCar && Input.GetButtonDown("Interact-Vehicle") && !_player.gameObject.activeInHierarchy) 
             Exit();
         Health();
-        
     }
 
     public void Enter(Vehicle car)
@@ -85,7 +82,7 @@ public class Vehicle : MonoBehaviour
         healthBar.fillAmount = carHealth / _carMaxHealth;
         
         //Shows healthBar on cars when damaged
-        if(carHealth != _carMaxHealth)
+        if(carHealth < _carMaxHealth)
             healthBar.transform.parent.gameObject.SetActive(true);
         
         if (carHealth < 0)
