@@ -29,7 +29,7 @@ public class Weapon : MonoBehaviour
         }
 
         //show or hide reload circle (should be changed to reloadBar or something)
-        healthBar.transform.parent.gameObject.SetActive(isReloading);
+        // healthBar.transform.parent.gameObject.SetActive(isReloading);
         
         //Change to when changing weapons
         weaponInfo.totalAmmo = totalAmmo;

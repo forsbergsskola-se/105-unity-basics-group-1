@@ -15,7 +15,7 @@ public class Vehicle : MonoBehaviour
     
     //testing 
     public Image healthBar;
-    public ParticleSystem ps;
+    public GameObject _ps;
     private bool _onFire;
     
 
@@ -26,7 +26,7 @@ public class Vehicle : MonoBehaviour
         _player = FindObjectOfType<Player>();
         _carMovement = GetComponent<CarMovement>();
 
-       // ps = FindObjectOfType<ParticleSystem>();
+       // _ps = GetComponent<ParticleSystem>();
        _onFire = false;
     }
 
@@ -38,8 +38,6 @@ public class Vehicle : MonoBehaviour
             Exit();
         Health();
         
-        //To make the fireOnCar follow the car
-        ps.transform.position = transform.position;
     }
 
     private void LateUpdate()
@@ -88,7 +86,6 @@ public class Vehicle : MonoBehaviour
         {
             Destroy(gameObject);
             //destroy firePS
-            Destroy(ps.gameObject);
             //Spawns fire when car dies
             Instantiate(fire, transform.position, transform.rotation );
             //Needs to know if player is in this car then take damage if so, else he dies when anyCar explodes
@@ -105,7 +102,7 @@ public class Vehicle : MonoBehaviour
             //To spawn fireOnCar once 
             if(!_onFire)
             {
-                ps = Instantiate(ps, transform.position, transform.rotation );
+                _ps.SetActive(true);
                 _onFire = true;
             }
         }
