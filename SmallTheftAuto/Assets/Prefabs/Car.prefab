@@ -625,6 +625,7 @@ MonoBehaviour:
   carHealth: 60
   isItMyCar: 0
   healthBar: {fileID: 8336684843208866161}
+  ps: {fileID: 7858212548317911152, guid: ed7352ca529b8a242b19f37e4be74815, type: 3}
 --- !u!65 &3068990415142920081
 BoxCollider:
   m_ObjectHideFlags: 0

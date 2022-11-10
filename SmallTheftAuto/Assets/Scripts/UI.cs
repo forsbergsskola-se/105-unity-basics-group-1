@@ -33,7 +33,7 @@ public class UI : MonoBehaviour
             weapon.SetText($"Fists");
         }
         else {
-            weapon.SetText($"Press 'R' To Reload");
+            weapon.SetText($"Reloading..");
         }
         
     }

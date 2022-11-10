@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Weapon : MonoBehaviour
 {
@@ -7,6 +8,9 @@ public class Weapon : MonoBehaviour
     public int currentAmmo;
     public float reloadTimer = 2f;
     public bool isReloading;
+    
+    //Test UI Reload
+    public Image healthBar;
     
     private void Start()
     {
@@ -18,12 +22,15 @@ public class Weapon : MonoBehaviour
             isReloading = true;
         
         //Cant reload on full clip and reloads when pushed R while ammo in gun and auto reloads when ammo = 0
-        if (currentAmmo == 0 || isReloading && currentAmmo != totalAmmo)
+        if (totalAmmo != 0 && currentAmmo == 0 || isReloading && currentAmmo != totalAmmo)
         {
             isReloading = true;
             Reloading();
         }
 
+        //show or hide reload circle
+        healthBar.transform.parent.gameObject.SetActive(isReloading);
+        
         //Change to when changing weapons
         weaponInfo.totalAmmo = totalAmmo;
         weaponInfo.currentAmmo = currentAmmo;
@@ -40,6 +47,8 @@ public class Weapon : MonoBehaviour
 
     private void Reloading()
     {
+        healthBar.fillAmount = reloadTimer / 2f;
+
         if (reloadTimer > 0)
             reloadTimer -= Time.deltaTime;
         if(reloadTimer < 0)

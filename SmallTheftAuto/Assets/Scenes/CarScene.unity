@@ -206,6 +206,10 @@ PrefabInstance:
       propertyPath: weaponInfo
       value: 
       objectReference: {fileID: 11400000, guid: fa20bff012cac384dbcc73a3e4e3f00f, type: 2}
+    - target: {fileID: 9042447388600926537, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}
+      propertyPath: isReloading
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9071310832664065963, guid: ab3a4104a5adf8e4fa4c91e94809443d, type: 3}
       propertyPath: weaponInfo
       value: 

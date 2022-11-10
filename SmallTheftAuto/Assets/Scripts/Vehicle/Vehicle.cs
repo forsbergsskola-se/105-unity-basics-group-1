@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,8 @@ public class Vehicle : MonoBehaviour
     
     //testing 
     public Image healthBar;
+    public ParticleSystem ps;
+    private bool onFire;
     
 
     private void Start()
@@ -23,6 +26,9 @@ public class Vehicle : MonoBehaviour
         _camera = FindObjectOfType<Camera>();
         _player = FindObjectOfType<Player>();
         _carMovement = GetComponent<CarMovement>();
+
+       // ps = FindObjectOfType<ParticleSystem>();
+       onFire = false;
     }
 
     private void Update()
@@ -32,6 +38,11 @@ public class Vehicle : MonoBehaviour
         if(isItMyCar && Input.GetButtonDown("Interact-Vehicle") && !_player.gameObject.activeInHierarchy) 
             Exit();
         Health();
+    }
+
+    private void LateUpdate()
+    {
+      //  healthBar.GetComponentInParent<Canvas>().transform.LookAt(UnityEngine.Camera.main.transform);
     }
 
     public void Enter(Vehicle car)
@@ -71,6 +82,8 @@ public class Vehicle : MonoBehaviour
         if (carHealth < 0)
         {
             Destroy(gameObject);
+            //destroy firePS
+            Destroy(ps.gameObject);
             //Spawns fire when car dies
             Instantiate(fire, transform.position, transform.rotation );
             //Needs to know if player is in this car then take damage if so, else he dies when anyCar explodes
@@ -84,8 +97,15 @@ public class Vehicle : MonoBehaviour
         if (carHealth <= _carMaxHealth / 2)
         {
             carHealth -= _burn * Time.deltaTime;
-            Debug.Log("Car is Burning!!");
+            //To spawn fireOnCar once 
+            if(!onFire)
+            {
+                ps = Instantiate(ps, transform.position, transform.rotation );
+                onFire = true;
+            }
         }
+        //To make the fireOnCar follow the car
+        ps.transform.position = transform.position;
     }
 
     public void TakeDamage(int damage)
