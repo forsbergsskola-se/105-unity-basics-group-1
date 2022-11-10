@@ -1,5 +1,4 @@
 
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,7 +16,7 @@ public class Vehicle : MonoBehaviour
     //testing 
     public Image healthBar;
     public ParticleSystem ps;
-    private bool onFire;
+    private bool _onFire;
     
 
     private void Start()
@@ -28,7 +27,7 @@ public class Vehicle : MonoBehaviour
         _carMovement = GetComponent<CarMovement>();
 
        // ps = FindObjectOfType<ParticleSystem>();
-       onFire = false;
+       _onFire = false;
     }
 
     private void Update()
@@ -38,6 +37,9 @@ public class Vehicle : MonoBehaviour
         if(isItMyCar && Input.GetButtonDown("Interact-Vehicle") && !_player.gameObject.activeInHierarchy) 
             Exit();
         Health();
+        
+        //To make the fireOnCar follow the car
+        ps.transform.position = transform.position;
     }
 
     private void LateUpdate()
@@ -75,7 +77,7 @@ public class Vehicle : MonoBehaviour
     {
         healthBar.fillAmount = carHealth / _carMaxHealth;
         
-        //Shows healthbar on cars when damaged
+        //Shows healthBar on cars when damaged
         if(carHealth != _carMaxHealth)
             healthBar.transform.parent.gameObject.SetActive(true);
         
@@ -98,14 +100,12 @@ public class Vehicle : MonoBehaviour
         {
             carHealth -= _burn * Time.deltaTime;
             //To spawn fireOnCar once 
-            if(!onFire)
+            if(!_onFire)
             {
                 ps = Instantiate(ps, transform.position, transform.rotation );
-                onFire = true;
+                _onFire = true;
             }
         }
-        //To make the fireOnCar follow the car
-        ps.transform.position = transform.position;
     }
 
     public void TakeDamage(int damage)

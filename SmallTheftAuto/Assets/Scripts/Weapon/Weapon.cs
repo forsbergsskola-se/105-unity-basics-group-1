@@ -28,7 +28,7 @@ public class Weapon : MonoBehaviour
             Reloading();
         }
 
-        //show or hide reload circle
+        //show or hide reload circle (should be changed to reloadBar or something)
         healthBar.transform.parent.gameObject.SetActive(isReloading);
         
         //Change to when changing weapons
@@ -42,6 +42,7 @@ public class Weapon : MonoBehaviour
     {
         //This needs to reset when changing weapons else he keeps reloading when we switch back
         isReloading = false;
+        weaponInfo.isReloading = isReloading;
         reloadTimer = 2;
     }
 
