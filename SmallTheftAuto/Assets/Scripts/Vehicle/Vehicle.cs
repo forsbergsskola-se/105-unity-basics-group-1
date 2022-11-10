@@ -1,10 +1,9 @@
-
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Vehicle : MonoBehaviour
 {
-    private Camera _camera;
+    private CameraFollow[] _cameras;
     public GameObject fire;
     private CarMovement _carMovement;
     private Player _player;
@@ -22,7 +21,7 @@ public class Vehicle : MonoBehaviour
     private void Start()
     {
         _carMaxHealth = carHealth;
-        _camera = FindObjectOfType<Camera>();
+        _cameras = FindObjectsOfType<CameraFollow>();
         _player = FindObjectOfType<Player>();
         _carMovement = GetComponent<CarMovement>();
 
@@ -40,14 +39,12 @@ public class Vehicle : MonoBehaviour
         
     }
 
-    private void LateUpdate()
-    {
-      //  healthBar.GetComponentInParent<Canvas>().transform.LookAt(UnityEngine.Camera.main.transform);
-    }
-
     public void Enter(Vehicle car)
     {
-        _camera.ChangeTarget(gameObject);
+        foreach (var camera in _cameras)
+        {
+            camera.ChangeTarget(gameObject);
+        }
         _player.gameObject.SetActive(false);
         car._carMovement.enabled = true;
     }
@@ -61,7 +58,10 @@ public class Vehicle : MonoBehaviour
         _player.transform.position = transform.position + new Vector3(2.5f,0f,0f);
         _carMovement.enabled = false;
         isItMyCar = false;
-        _camera.ChangeTarget(_player.gameObject);
+        foreach (var camera in _cameras)
+        {
+            camera.ChangeTarget(_player.gameObject);
+        }
     }
 
     public void OnCollisionEnter(Collision collision)
