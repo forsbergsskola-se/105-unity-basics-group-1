@@ -15,3 +15,4 @@ MonoBehaviour:
   nameOfWeapon: HandGun
   totalAmmo: 15
   currentAmmo: 15
+  isReloading: 0

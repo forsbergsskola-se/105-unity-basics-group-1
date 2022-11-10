@@ -26,7 +26,9 @@ public class UI : MonoBehaviour
         moneyText.SetText($"Money: {playerInfo.money}");
         scoreText.SetText($"Score: {playerInfo.score}");
         questText.SetText($"{activeQuestInfo.description}");
-        if(weaponInfo.currentAmmo != 0)
+        if(weaponInfo.isReloading)
+            weapon.SetText($"Reloading..");
+        else if(weaponInfo.currentAmmo != 0)
             weapon.SetText($"{weaponInfo.nameOfWeapon}: {weaponInfo.currentAmmo}/{weaponInfo.totalAmmo}");
         else if (weaponInfo.nameOfWeapon == "Fists")
         {

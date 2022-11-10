@@ -58,6 +58,8 @@ public class Weapon : MonoBehaviour
             reloadTimer = 2f;
             weaponInfo.currentAmmo = totalAmmo;
         }
+        
+        weaponInfo.isReloading = this.isReloading;
     }
 }
 
