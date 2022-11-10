@@ -67,10 +67,16 @@ public class Vehicle : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
          //if you want to add enemy cars, call it CarE
-         if (collision.gameObject.CompareTag("Wall") || collision.gameObject.CompareTag("CarE"))
+         if (collision.gameObject.CompareTag("CarE"))
          {
-             carHealth -= _carMovement.currSpeed;
+             //So other cars take damage if we drive into them.
              collision.gameObject.GetComponent<Vehicle>().carHealth -= _carMovement.currSpeed;
+             carHealth -= _carMovement.currSpeed;
+         }
+         else
+         {
+             // Takes damage on everything depending on carSpeed, so if we are driving we take damage on everything. We need if pedestrianTag dont take damage instead kill him
+             carHealth -= _carMovement.currSpeed;
          }
     }
 
