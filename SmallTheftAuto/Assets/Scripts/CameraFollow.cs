@@ -17,13 +17,16 @@ public class CameraFollow : MonoBehaviour {
         if(_target != null) 
         {
             Vector3 targetPosition = _target.transform.position + _offset;
-            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+            if (isMinimap)
+            {
+                transform.position = targetPosition;
+            }
+            else
+            {
+                transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
+            }
         }
 
-        if (isMinimap)
-        {
-            transform.position = _target.transform.position + _offset;
-        }
     }
 
     public void ChangeTarget(GameObject target)
