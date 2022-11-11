@@ -19,8 +19,8 @@ public class Spawner : MonoBehaviour
     
     void SpawnPrefab()
     {
-        if (_numPedestrians < maxPedestrians) Instantiate(pedestrian, pedestrian.pathConfig.GetFirstWaypoint().transform);
-        if (_numCars < maxCars) Instantiate(car, car.pathConfig.GetFirstWaypoint().transform);
+        if (_numPedestrians < maxPedestrians) Instantiate(pedestrian);
+        if (_numCars < maxCars) Instantiate(car);
         _numPedestrians = FindObjectsOfType<Pedestrian>().Length;
         _numCars = FindObjectsOfType<Vehicle>().Length;
     }
