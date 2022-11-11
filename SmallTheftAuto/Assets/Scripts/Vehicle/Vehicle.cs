@@ -97,37 +97,6 @@ public class Vehicle : MonoBehaviour
             _carHealth = value;
             healthBar.fillAmount = value / _carMaxHealth;
             Health();
-            /*
-            //Shows healthBar on cars when damaged
-            if(_carHealth < _carMaxHealth) 
-                healthBar.transform.parent.gameObject.SetActive(true);
-        
-            if (value < 0)
-            {
-                Destroy(gameObject);
-                //destroy firePS
-                //Spawns fire when car dies
-                Instantiate(fire, transform.position, transform.rotation );
-                //Needs to know if player is in this car then take damage if so, else he dies when anyCar explodes
-                if (!isItMyCar) return;
-                if (!_player.gameObject.activeInHierarchy) _player.gameObject.SetActive(true);
-                _player.TakeDamage(_player.playerInfo.maxHealth);
-                Debug.Log("Car Exploded");
-                _carHealth = 0;
-            }
-
-            if (value <= _carMaxHealth / 2)
-            {
-                //TakeDamage(_burn * Time.deltaTime); 
-                //To spawn fireOnCar once 
-               
-                if(!_onFire)
-                {
-                    ps.SetActive(true);
-                    _onFire = true;
-                }
-            }
-            */
         }
     }
     
