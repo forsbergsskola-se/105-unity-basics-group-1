@@ -13,16 +13,15 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("CarE"))
+        if (col.gameObject.CompareTag("CarE") && col.gameObject != null)
         {
-            Vehicle car = col.GetComponent<Vehicle>();
-            car.TakeDamage(10);
+            col.GetComponent<Vehicle>().TakeDamage(10);
         }
         
         Destroy(gameObject);
     }
     
-    void OnBecameInvisible()
+    private void OnBecameInvisible()
     {
         //Should be called when out of view in scene and/or game view
         Destroy(gameObject);

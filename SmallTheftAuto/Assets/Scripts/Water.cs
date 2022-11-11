@@ -13,7 +13,8 @@ public class Water : MonoBehaviour
         else if (col.gameObject.CompareTag("CarE"))
         {
             vehicle = col.GetComponent<Vehicle>();
-            vehicle.TakeDamage((int)vehicle.carHealth + 1);
+            //vehicle.TakeDamage((int)vehicle.carHealth + 1);
+            vehicle.TakeDamage(60);
         }
     }
 

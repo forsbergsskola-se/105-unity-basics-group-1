@@ -8,8 +8,10 @@ public class Vehicle : MonoBehaviour
     private CarMovement _carMovement;
     private Player _player;
     private float _burn = 5;
+    //Working on:
     private float _carMaxHealth;
-    public float carHealth;
+    private float _carHealth = 60f;
+   
     public bool isItMyCar;
     
     //testing 
@@ -20,7 +22,7 @@ public class Vehicle : MonoBehaviour
 
     private void Start()
     {
-        _carMaxHealth = carHealth;
+        _carMaxHealth = _carHealth;
         _cameras = FindObjectsOfType<CameraFollow>();
         _player = FindObjectOfType<Player>();
         _carMovement = GetComponent<CarMovement>();
@@ -33,7 +35,8 @@ public class Vehicle : MonoBehaviour
     {
         if(isItMyCar && Input.GetButtonDown("Interact-Vehicle") && !_player.gameObject.activeInHierarchy) 
             Exit();
-        Health();
+        if(_carHealth <= _carMaxHealth / 2)
+            TakeDamage(_burn * Time.deltaTime); 
     }
 
     public void Enter(Vehicle car)
@@ -67,8 +70,8 @@ public class Vehicle : MonoBehaviour
          if (collision.gameObject.CompareTag("CarE"))
          {
              //So other cars take damage if we drive into them.
-             collision.gameObject.GetComponent<Vehicle>().carHealth -= _carMovement.currSpeed;
-             carHealth -= _carMovement.currSpeed;
+             collision.gameObject.GetComponent<Vehicle>()._carHealth -= _carMovement.currSpeed;
+             _carHealth -= _carMovement.currSpeed;
          }
          if (collision.gameObject.CompareTag("Player"))
          {
@@ -78,51 +81,82 @@ public class Vehicle : MonoBehaviour
          if (collision.gameObject.layer == 3)
          {
              //if colliding with layer ground take no damage.
-             //Physics.IgnoreCollision(theobjectToIgnore.collider, collider);
          }
          else
          {
              // Takes damage on everything depending on carSpeed, so if we are driving we take damage on everything. We need if pedestrianTag dont take damage instead kill him
-             carHealth -= _carMovement.currSpeed;
+             _carHealth -= _carMovement.currSpeed;
          }
     }
 
+    private float Health2
+    {
+        get => _carHealth;
+        set
+        {
+            _carHealth = value;
+            healthBar.fillAmount = value / _carMaxHealth;
+            Health();
+            /*
+            //Shows healthBar on cars when damaged
+            if(_carHealth < _carMaxHealth) 
+                healthBar.transform.parent.gameObject.SetActive(true);
+        
+            if (value < 0)
+            {
+                Destroy(gameObject);
+                //destroy firePS
+                //Spawns fire when car dies
+                Instantiate(fire, transform.position, transform.rotation );
+                //Needs to know if player is in this car then take damage if so, else he dies when anyCar explodes
+                if (!isItMyCar) return;
+                if (!_player.gameObject.activeInHierarchy) _player.gameObject.SetActive(true);
+                _player.TakeDamage(_player.playerInfo.maxHealth);
+                Debug.Log("Car Exploded");
+                _carHealth = 0;
+            }
+
+            if (value <= _carMaxHealth / 2)
+            {
+                //TakeDamage(_burn * Time.deltaTime); 
+                //To spawn fireOnCar once 
+               
+                if(!_onFire)
+                {
+                    ps.SetActive(true);
+                    _onFire = true;
+                }
+            }
+            */
+        }
+    }
+    
     private void Health()
     {
-        healthBar.fillAmount = carHealth / _carMaxHealth;
-        
         //Shows healthBar on cars when damaged
-        if(carHealth < _carMaxHealth)
+        if(_carHealth < _carMaxHealth) 
             healthBar.transform.parent.gameObject.SetActive(true);
-        
-        if (carHealth < 0)
+    
+        if (_carHealth < 0)
         {
             Destroy(gameObject);
-            //destroy firePS
             //Spawns fire when car dies
             Instantiate(fire, transform.position, transform.rotation );
             //Needs to know if player is in this car then take damage if so, else he dies when anyCar explodes
             if (!isItMyCar) return;
             if (!_player.gameObject.activeInHierarchy) _player.gameObject.SetActive(true);
             _player.TakeDamage(_player.playerInfo.maxHealth);
-            Debug.Log("Car Exploded");
-            carHealth = 0;
+            _carHealth = 0;
         }
 
-        if (carHealth <= _carMaxHealth / 2)
-        {
-            carHealth -= _burn * Time.deltaTime;
-            //To spawn fireOnCar once 
+        if (_carHealth <= _carMaxHealth / 2)
             if(!_onFire)
             {
                 ps.SetActive(true);
                 _onFire = true;
             }
-        }
     }
+    
 
-    public void TakeDamage(int damage)
-    {
-        carHealth -= damage;
-    }
+    public void TakeDamage(float damage) => Health2 -= damage;
 }
