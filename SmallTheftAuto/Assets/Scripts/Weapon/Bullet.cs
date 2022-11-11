@@ -13,11 +13,12 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.gameObject.CompareTag("CarE") && col.gameObject != null)
+        Vehicle car = col.GetComponent<Vehicle>();
+        if (car != null)
         {
-            col.GetComponent<Vehicle>().TakeDamage(10);
+            car.TakeDamage(10);
+            Destroy(gameObject);
         }
-        
         Destroy(gameObject);
     }
     
