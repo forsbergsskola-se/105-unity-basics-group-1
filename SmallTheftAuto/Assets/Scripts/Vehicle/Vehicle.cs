@@ -14,7 +14,7 @@ public class Vehicle : MonoBehaviour
     
     //testing 
     public Image healthBar;
-    public GameObject _ps;
+    public GameObject ps;
     private bool _onFire;
     
 
@@ -70,6 +70,16 @@ public class Vehicle : MonoBehaviour
              collision.gameObject.GetComponent<Vehicle>().carHealth -= _carMovement.currSpeed;
              carHealth -= _carMovement.currSpeed;
          }
+         if (collision.gameObject.CompareTag("Player"))
+         {
+             //If colliding with player dont take damage(do nothing)
+             //Physics.IgnoreCollision(_player.gameObject.GetComponent<Collider>(), GetComponent<Collider>());
+         }
+         if (collision.gameObject.layer == 3)
+         {
+             //if colliding with layer ground take no damage.
+             //Physics.IgnoreCollision(theobjectToIgnore.collider, collider);
+         }
          else
          {
              // Takes damage on everything depending on carSpeed, so if we are driving we take damage on everything. We need if pedestrianTag dont take damage instead kill him
@@ -105,7 +115,7 @@ public class Vehicle : MonoBehaviour
             //To spawn fireOnCar once 
             if(!_onFire)
             {
-                _ps.SetActive(true);
+                ps.SetActive(true);
                 _onFire = true;
             }
         }
