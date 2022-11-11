@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class WeaponSwitching : MonoBehaviour
 {
-    public int selectWeapon = 0;
+    private int _selectWeapon;
     private void Start()
     {
         SelectWeapon();
@@ -13,16 +11,16 @@ public class WeaponSwitching : MonoBehaviour
 
     private void Update()
     {
-        int previousSelectedWeapon = selectWeapon;
+        int previousSelectedWeapon = _selectWeapon;
         
         if (Input.GetKeyDown(KeyCode.Alpha1))
-            selectWeapon = 0;
+            _selectWeapon = 0;
         if (Input.GetKeyDown(KeyCode.Alpha2))
-            selectWeapon = 1;
+            _selectWeapon = 1;
         if (Input.GetKeyDown(KeyCode.Alpha3))
-            selectWeapon = 2;
+            _selectWeapon = 2;
 
-        if (previousSelectedWeapon != selectWeapon)
+        if (previousSelectedWeapon != _selectWeapon)
             SelectWeapon();
     }
 
@@ -31,19 +29,8 @@ public class WeaponSwitching : MonoBehaviour
         int i = 0;
         foreach (Transform weapon in transform)
         {
-            weapon.gameObject.SetActive(i == selectWeapon);
+            weapon.gameObject.SetActive(i == _selectWeapon);
             i++;
-            
-            //Resets reload timer when switching weapon
-            weapon.gameObject.GetComponent<Weapon>().ResetReload();
-            /* same as above
-            if( i == selectWeapon)
-                weapon.gameObject.SetActive(true);
-            else
-                weapon.gameObject.SetActive(false);
-            */
-            
-            //Need the weapon reference to attack with the correct one
         }
     }
 }
