@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c31388395b978974db1471406b18f218, type: 3}
+  m_Name: PedestrianPath
+  m_EditorClassIdentifier: 
+  path: {fileID: 294681960755593972, guid: 639f10817eb51384f9bf60207b59ef08, type: 3}
+  movementSpeed: 10
