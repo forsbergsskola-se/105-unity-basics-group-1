@@ -15,6 +15,7 @@ public class Weapon : MonoBehaviour
     
     private void Start()
     {
+        ResetWeapons();
         weaponInfo.currentAmmo = currentAmmo = totalAmmo;
     }
 
