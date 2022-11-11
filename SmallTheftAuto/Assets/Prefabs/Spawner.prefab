@@ -45,6 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pedestrian: {fileID: 8629870586135018880, guid: ebda0dbcdfb65864c959fc33bb728c1b, type: 3}
-  car: {fileID: -6346068425863449177, guid: 642ed45a155b74e45a6f34669018520c, type: 3}
+  car: {fileID: 4767982943792414590, guid: 7b2f0cd30e126a64d8b1a24353c38ea0, type: 3}
   maxPedestrians: 5
   maxCars: 3

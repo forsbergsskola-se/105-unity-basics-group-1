@@ -47,6 +47,7 @@ public class Vehicle : MonoBehaviour
         }
         _player.gameObject.SetActive(false);
         car._carMovement.enabled = true;
+        GetComponent<Path>().enabled = false;
     }
 
     private void Exit()
