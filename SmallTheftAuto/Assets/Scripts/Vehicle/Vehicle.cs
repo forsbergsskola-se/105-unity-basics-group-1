@@ -70,8 +70,8 @@ public class Vehicle : MonoBehaviour
          if (collision.gameObject.CompareTag("CarE"))
          {
              //So other cars take damage if we drive into them.
-             collision.gameObject.GetComponent<Vehicle>()._carHealth -= _carMovement.currSpeed;
-             _carHealth -= _carMovement.currSpeed;
+             collision.gameObject.GetComponent<Vehicle>().TakeDamage(_carMovement.currSpeed);
+             TakeDamage(_carMovement.currSpeed); 
          }
          if (collision.gameObject.CompareTag("Player"))
          {
